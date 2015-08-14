@@ -56,7 +56,7 @@
 			}
 
 			body{
-				background-color: black;
+				
 			}
 			h1{
 				text-align: center;
@@ -74,22 +74,24 @@
 				background-color: black;
 				width: 20%;
 				position:absolute;
-				min-height: 400px;
+				height:100%;
 				opacity: .5;
+				max-height: 500px;
 
 			}
 			div.menu{
 				width: 20%;
 				position:absolute;
-				min-height: 450px;
+				height:100%;
 				opacity:1.5;
+				max-height: 500px;
 			}
 	
 			div.home{
 				background-image: url("http://thumbs.dreamstime.com/z/high-school-students-hanging-out-campus-using-mobile-phone-41521852.jpg");
 				width: 100%;
 				height:100%;
-				min-height: 400px;
+				min-height:500px;
 			}
 
 			li {
@@ -106,9 +108,13 @@
 				color:white;
 			}
 
-			p{
+			h2{
 				display:inline-block;
-				padding-top: 15px;
+				padding-top: 40px;
+				text-align: ;
+
+	         
+             	
 
 			}
 
@@ -126,16 +132,23 @@
 
 			.sbutton {
 		     width: 20%;
+		     height:50px;
 	         margin-left: 40%;
 	         margin-right: 40%;
-             color: blue;
-             display: block;}
+             color: black;
+             background-color: none;
+             font-family: "DoubleFeature";
+             font-size: 30px;
+             display: block;
+             border: none;}
 
             .input {
- 	         width: 40%;
- 	         height: 300px;
- 	         margin-left: 30%;
- 	         margin-right: 30%;
+ 	         width: 80%;
+ 	         max-width:80%;
+ 	         max-height: 50px;
+ 	         height: 50px;
+ 	         margin-left: 10%;
+ 	         margin-right: 10%;
  	         font-size:50px;
  			}  
 
@@ -146,10 +159,14 @@
  			}
 
  			.text{
- 				height: 20px;
- 				width: 300px;
- 				padding-left: 51%;
- 			}
+ 			 width: 30%;
+		     height:50px;
+	         margin-left: 47%;
+	         margin-right: 20%;
+            
+             font-size: 30px;
+             display: block;
+           }
 
 
 		</style>
@@ -180,10 +197,12 @@
 		</div>
 		
 		<div class="home">
-				<div class="text"><p>Tell us how to get a 100!</p></div>
+				<div class="text"><h2>Tell us how to get a 100!</h2></div>
 				<form class="one">
-	    		  <textarea  class="input" name="message" rows="10" cols		="10"></textarea>
-	    		  <input class="sbutton" onclick="alert('Thank you for 		helping us get a 100!')" type="submit" value="submit">
+	    		  <textarea  class="input" name="message" rows="1" cols="1"></textarea>
+	    		  <br>
+	    		  <br>
+	    		  <input class="sbutton" onclick="alert('Thank you for helping us get a 100!')" type="submit" value="submit">
         		</form>	
 		</div>
 
