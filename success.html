@@ -74,14 +74,14 @@
 				background-color: black;
 				width: 20%;
 				position:absolute;
-				min-height: 600px;
+				min-height: 400px;
 				opacity: .5;
 
 			}
 			div.menu{
 				width: 20%;
 				position:absolute;
-				min-height: 600px;
+				min-height: 450px;
 				opacity:1.5;
 			}
 	
@@ -89,7 +89,7 @@
 				background-image: url("http://thumbs.dreamstime.com/z/high-school-students-hanging-out-campus-using-mobile-phone-41521852.jpg");
 				width: 100%;
 				height:100%;
-				min-height: 600px;
+				min-height: 400px;
 			}
 
 			li {
@@ -104,6 +104,12 @@
 				border-color: white;
 				text-decoration: none;
 				color:white;
+			}
+
+			p{
+				display:inline-block;
+				padding-top: 15px;
+
 			}
 
 			@font-face {
@@ -130,7 +136,20 @@
  	         height: 300px;
  	         margin-left: 30%;
  	         margin-right: 30%;
- }  
+ 	         font-size:50px;
+ 			}  
+
+ 			.one {
+ 			padding-top: 80px;
+ 			padding-left: 20%;
+ 			padding-bottom: 70px;
+ 			}
+
+ 			.text{
+ 				height: 20px;
+ 				width: 300px;
+ 				padding-left: 51%;
+ 			}
 
 
 		</style>
@@ -161,12 +180,14 @@
 		</div>
 		
 		<div class="home">
-		
+				<div class="text"><p>Tell us how to get a 100!</p></div>
+				<form class="one">
+	    		  <textarea  class="input" name="message" rows="10" cols		="10"></textarea>
+	    		  <input class="sbutton" onclick="alert('Thank you for 		helping us get a 100!')" type="submit" value="submit">
+        		</form>	
 		</div>
-		<form>
-	      <textarea  class="input" name="message" rows="10" cols="10"></textarea>
-	      <input class="sbutton" onclick="alert('Thank you for helping us get a 100!')" type="submit" value="submit">
-        </form>
+
+		
 
 
 	</body>
