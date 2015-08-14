@@ -147,7 +147,42 @@
 		</div>
 		
 		<div class="home">
-		
+		<p>Please input a number between 1 and 100:</p>
+
+<input id="numb" type="number">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="score"></p>
+
+<img id="myImage" onclick="changeImage()" src="http://i57.tinypic.com/2ele3ap.png" width="300" height="280">
+<script>
+function myFunction() {
+    var x, text;
+   var image;
+
+x = document.getElementById("numb").value;
+   
+image = document.getElementById('myImage') ;
+
+    if (x >= 100) {
+    text="Yes, this is an acceptable grade!";
+    image.src= "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-YSQBTibN6qCnlLJCae651F_KbD1oJEQ0P5eOgRxvc7vtDmEjxQ"}
+
+    else if (x >= 50 ) {    
+text="Wrong, we do not want this grade!";
+    image.src = "http://radicalsuccessinstitute.com/conference/wp-content/uploads/2014/12/failure.png";
+   
+
+    } else {
+        text = "Total fail";
+        image.src ="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnAvkTJ8ID0cCUdvAMY-efpyiNuo-FSvlDOE_AycqY-jR5LM7Z";
+        ;
+        
+    }
+    document.getElementById("score").innerHTML = text;
+}
+</script>
 		</div>
 
 	</body>
