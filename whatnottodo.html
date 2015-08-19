@@ -117,7 +117,12 @@
 		   	 font-family: "DoubleFeature";
 		   	 padding:30px;
 				}
-	
+	        .float {
+               
+                float: right;
+                 padding-right: 150px;
+	        	}
+	    h2 {font-size: 30px;}    	
 
 		</style>
 	
@@ -138,18 +143,21 @@
 			</div>
 			<nav>
 				<ul>
-					<li class="customfont"><a href="about.html">About Us</a></li>
-					<li class="customfont"><a href="success.html">Send Us<br>Suggestions For Success!</a></li>
-					<li class="customfont"><a href="whatnottodo.html">What Not to Do!</a><li>
-					<li class="customfont"><a href="mailto:shirmung@nycda.com?subject=IMPORTANT: Dan and Joel's grade&body=Hi Shirmung! I'm writing to let you know that I think Dan and Joel deserve a 100 in your class. I'm cc'ing Victoria so that she knows too. Have a great day!&cc=victoria@nycda.com">Tell Shirmung what you think!</a><li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="success.html">Send Us<br>Suggestions For Success!</a></li>
+					<li><a href="whatnottodo.html">What Not to Do!</a><li>
+					<li><a href="mailto:shirmung@nycda.com?subject=IMPORTANT: Dan and Joel's grade&body=Hi Shirmung! I'm writing to let you know that I think Dan and Joel deserve a 100 in your class. I'm cc'ing Victoria so that she knows too. Have a great day!&cc=victoria@nycda.com">Tell Shirmung what you think!</a><li>
 				</ul>
 			</nav>
 		</div>
-		
+
 		<div class="home">
+			<div class="float">
+		<h2>Tell us what you think is a good grade</h2>	
+		<br>	
 		<p>Please input a number between 1 and 100:</p>
 
-<input id="numb" type="number">
+ <input id="numb" type="number">
 
 <button type="button" onclick="myFunction()">Submit</button>
 
@@ -183,6 +191,7 @@ text="Wrong, we do not want this grade!";
     document.getElementById("score").innerHTML = text;
 }
 </script>
+           </div>
 		</div>
 
 	</body>
